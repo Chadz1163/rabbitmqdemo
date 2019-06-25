@@ -1,3 +1,4 @@
+/*
 package com.rabbitmqdemo.rabbitmqdemo.test.quickstart;
 
 import com.rabbitmq.client.*;
@@ -26,7 +27,7 @@ public class Consumer {
         String queueName = "test001";
         channel.queueDeclare(queueName, true, false, false, null);
 
-/*        // 5 创建消费者
+       // 5 创建消费者
         QueueingConsumer queueingConsumer = new QueueingConsumer(channel);
 
         // 6 设置Channel
@@ -36,10 +37,11 @@ public class Consumer {
             // 7 获取消息
             QueueingConsumer.Delivery delivery = queueingConsumer.nextDelivery();
             String msg = new String(delivery.getBody());
-            System.err.println("消费者：" + msg);*/
+            System.err.println("消费者：" + msg);
 //            Envelope envelope = delivery.getEnvelope();
-//        }
+        }
 
     }
 
 }
+*/
